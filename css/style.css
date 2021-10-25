@@ -1,0 +1,32 @@
+.titulo {
+    background-color: rgb(55, 0, 255);
+    text-shadow: aqua;
+}
+h1 { 
+    color: aqua;
+}
+body {
+    background-image: url(/icono/fondo.jpg);
+}
+.btn {
+    width: 25%;
+    background-color: rgb(214, 15, 204);
+    border-top: 0px;    
+}
+#btnn {
+    background-color: rgb(76, 68, 192);
+    width: 35%;
+}
+.table {
+    background-color: aqua;
+    width: 100%;
+}
+.contain {
+    width: 1351px;
+}
+#main {
+    width: 30%;
+}
+#bt {
+    width: 35%;
+}

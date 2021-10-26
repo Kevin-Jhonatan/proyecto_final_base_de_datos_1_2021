@@ -46,6 +46,10 @@
                     <div class="col">
                         <span>Cédula de identidad de cliente:</span>
                         <input type="number" id="cliente" name="cliente" class="form-control" placeholder="Ingrese cédula de identidad del cliente" required>
+                    </div> 
+                    <div class="col">
+                        <span>Código de producto:</span>
+                        <input type="number" id="prod" name="prod" class="form-control" placeholder="Ingrese código del producto" required>
                     </div>
                 </div><br>
             <center><input type="submit" class="btn btn-success btn-block" value="Registrar" id="registro" name="registro">
@@ -66,10 +70,11 @@
     $cantidad = $_POST['cantidad'];
     $empleado = $_POST['empleado'];
     $cliente = $_POST['cliente'];
+    $prod = $_POST['prod'];
 
 
-    $insertar = "INSERT INTO VENTA (codigo, fecha, monto_cobrado, cantidad_producto, EMPLEADO_codigo, CLIENTE_ci)
-    VALUES ($codigo, '$fecha', $monto, $cantidad, $empleado, $cliente)";
+    $insertar = "INSERT INTO VENTA (codigo, fecha, cantidad_producto, EMPLEADO_codigo, CLIENTE_ci, codigo_PRODUCTO, monto_cobrado)
+    VALUES ($codigo, '$fecha', $cantidad, $empleado, $cliente, $prod, $monto)";
 
     if (mysqli_query($conn, $insertar)) {
         $_SESSION['message'] = '<b><h2>Registro guardado exitosamente!! :-)</h2></b> ';

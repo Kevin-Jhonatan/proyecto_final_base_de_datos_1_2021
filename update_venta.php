@@ -27,7 +27,7 @@
         if(isset($_GET['codigo'])) { 
             $codigo = $_GET['codigo'];
 
-            $query = "SELECT codigo, fecha, monto_cobrado, cantidad_producto, EMPLEADO_codigo, CLIENTE_ci FROM VENTA where codigo='$codigo'";
+            $query = "SELECT codigo, fecha, monto_cobrado, cantidad_producto, EMPLEADO_codigo, CLIENTE_ci, codigo_PRODUCTO FROM VENTA where codigo='$codigo'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) == 1){
                 $row = mysqli_fetch_array($result);
@@ -37,6 +37,7 @@
                 $cantidad = $row['cantidad_producto'];
                 $empleado = $row['EMPLEADO_codigo'];
                 $cliente = $row['CLIENTE_ci'];
+                $prod = $row['codigo_PRODUCTO'];
             }
         }
         if(isset($_POST['actualizar'])){
@@ -46,8 +47,9 @@
             $cantidad = $_POST['cantidad'];
             $empleado = $_POST['empleado'];
             $cliente = $_POST['cliente'];
+            $prod = $_POST['prod'];
 
-            $update = "UPDATE VENTA set codigo='$codigo', fecha='$fecha', monto_cobrado='$monto', cantidad_producto='$cantidad', EMPLEADO_codigo='$empleado', CLIENTE_ci='$cliente'
+            $update = "UPDATE VENTA set codigo='$codigo', fecha='$fecha', monto_cobrado='$monto', cantidad_producto='$cantidad', EMPLEADO_codigo='$empleado', CLIENTE_ci='$cliente', codigo_PRODUCTO='$prod'
                 WHERE codigo = '$codigo'";
             mysqli_query($conn, $update);
             $_SESSION['message'] = 'Registro actualizado exitosamente!! :-)';
@@ -88,6 +90,10 @@
                         <div class="col">
                             <span>Cédula de identidad de cliente:</span>
                             <input type="number" id="cliente" name="cliente" value="<?php echo($cliente)?>"class="form-control" placeholder="Ingrese cédula de identidad del cliente" required>
+                        </div>
+                        <div class="col">
+                            <span>Código de producto:</span>
+                            <input type="number" id="prod" name="prod"  value="<?php echo($prod)?>" class="form-control" placeholder="Ingrese código del producto" required>
                         </div>
                     </div><br>
                     <center><input type="submit" class="btn btn-success btn-block" value="Actualizar" id="actualizar" name="actualizar">

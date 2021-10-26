@@ -56,7 +56,7 @@
             $accesorio = $_POST['accesorio'];
             $proveedor = $_POST['proveedor'];
 
-            $update = "UPDATE PRODUCTO set codigo='$codigo', nombre='$nombre', marca='$marca', modelo='$modelo', descripcion='$descripcion', precio='$precio', gama='$gama', ACCESORIO_codigo='$accesorio', PROVEEDOR_codigo='$proveedor'
+            $update = "UPDATE PRODUCTO set codigo='$codigo', nombre='$nombre', marca='$marca', modelo='$modelo', descripcion='$descripcion', precio='$precio', garantia='$garantia', gama='$gama', ACCESORIO_codigo='$accesorio', PROVEEDOR_codigo='$proveedor'
                 WHERE codigo = '$codigo'";
             mysqli_query($conn, $update);
             $_SESSION['message'] = 'Registro actualizado exitosamente!! :-)';

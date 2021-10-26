@@ -59,6 +59,7 @@
                         <th scope="col">Cantidad de producto</th>
                         <th scope="col">Código de empleado</th>
                         <th scope="col">Cédula de identidad cliente</th>
+                        <th scope="col">Código de producto</th>
                         <th scope="col" class="fecha">Opciones</th>
                     </tr>
                 </thead>
@@ -74,6 +75,7 @@
                             <td><?php echo $row['cantidad_producto']." Unidad(es)"?></td>
                             <td><?php echo $row['EMPLEADO_codigo'] ?></td>
                             <td><?php echo $row['CLIENTE_ci'] ?></td>
+                            <td><?php echo $row['codigo_PRODUCTO'] ?></td>
                             <td>
                                 <a href="update_venta.php?codigo=<?php echo $row['codigo']?>" class="btn btn-secondary">
                                     <i class="fa fa-edit"></i>
@@ -87,7 +89,7 @@
                     <?php } ?>
                 </tbody>
             </table>
-            <center><input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.com';" value="Volver al menú" /></center>
+            <center><input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.com/user.php';" value="Volver al menú" /></center>
         </div>
     </div>
 </body>

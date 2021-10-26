@@ -39,7 +39,7 @@
                 </div>
                 <div class="col">
                     <span>Descripción</span>
-                    <input type="text" id="descripcion" name="descripcion" class="form-control" maxlength="10" placeholder="Ingrese su descripción" required>
+                    <textarea type="text" id="descripcion" name="descripcion" class="form-control" maxlength="80" placeholder="Ingrese su descripción" required></textarea>
                 </div>
                 <div class="col">
                     <span>Precio:</span>

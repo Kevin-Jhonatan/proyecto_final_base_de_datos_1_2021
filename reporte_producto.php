@@ -95,7 +95,7 @@
                     <?php } ?>
                 </tbody>
             </table>
-            <center><input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.com/user.php';" value="Volver al menú" /></center>
+            <center><input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.cochasoft.com/user.php';" value="Volver al menú" /></center>
         </div>
     </div>
 </body>

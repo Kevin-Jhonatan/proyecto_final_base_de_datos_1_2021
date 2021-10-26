@@ -123,8 +123,8 @@
                         </div>
                     </div><br>
                     <center><input type="submit" class="btn btn-success btn-block" value="Actualizar" id="actualizar" name="actualizar">
-                    <input type="button" class="btn btn-success btn-block" onclick="location.href='http://karmaland.com/reporte_empleado.php';"value="Atrás">
-                    <input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.com/user.php';" value="Volver al menú" /></center>
+                    <input type="button" class="btn btn-success btn-block" onclick="location.href='http://karmaland.cochasoft.com/reporte_empleado.php';"value="Atrás">
+                    <input type="button" class="btn btn-success btn-block" id="main" onclick="location.href='http://karmaland.cochasof.com/user.php';" value="Volver al menú" /></center>
                 </form>
             </div>
         </div>

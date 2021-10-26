@@ -72,7 +72,7 @@
                     </div><br>
                     <center><input type="submit" class="btn btn-success btn-block" value="Registrar" id="registrar" name="registrar">
                     <input type="reset" class="btn btn-success btn-block" value="Limpiar">
-                    <input type="button" class="btn btn-success btn-block" onclick="location.href='http://karmaland.com/user.php';" value="Volver al menú" /></center>
+                    <input type="button" class="btn btn-success btn-block" onclick="location.href='http://karmaland.cochasoft.com/user.php';" value="Volver al menú" /></center>
                 </form>
             </div>
         </div>

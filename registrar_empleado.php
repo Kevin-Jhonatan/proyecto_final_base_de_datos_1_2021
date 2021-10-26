@@ -104,7 +104,6 @@
             $_SESSION['message'] = '<b><h2>Registro guardado exitosamente!! :-)</h2></b> ';
             $_SESSION['message_type'] = 'success';
             header('Location:index.php');
-            //echo '<script language="javascript">alert("Se registro correctamente!! :-)");</script>';
         }else{
             echo '<script language="javascript">alert("El código de empleado ya existe!! intentelo nuevamente ;-(");</script>'. mysqli_error($conn);
         }    

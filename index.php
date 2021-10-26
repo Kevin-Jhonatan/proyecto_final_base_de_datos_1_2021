@@ -43,21 +43,15 @@ $consulta="SELECT * FROM EMPLEADO where nombre='$usuario' and codigo='$contrase�
 $resultado=mysqli_query($conn,$consulta);
 
 $filas=mysqli_num_rows($resultado);
-
 if($filas) {
   header("location:user.php");
 } else{
     ?>
     <?php
-    include("index.html");
-    echo ('<script languaje="javascript">alert("Error al iniciar sesi처n Intentelo nuevamente!! ;-( ")');
+    //include("index.php");
   ?>
-    <!-- <h1 class="bad">Error al iniciar sesi처n en Karmaland</h1>   -->
-<!--    <script language="javascript">alert("Error al iniciar sesi처n Intentelo nuevamente!! ;-( ");</script>
- -->     <?php
+     <?php
  
-  echo ('<script language="javascript">alert("Error al iniciar sesi처n Intentelo nuevamente!! ;-( ");</script>');
 }
 mysqli_free_result($resultado);
 mysqli_close($conn);
-//echo ('<script language="javascript">alert("Cerraste sesi처n exitosamente Adios!! ;-( ");</script>');

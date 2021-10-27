@@ -19,14 +19,14 @@
     <div class="form-group">
       <div class="container">
         <div class="animate__animated animate__backInLeft">
-        <form action="index.php" class="formulario" method="POST">
-            <h1 class="animate__animated animate__backInLeft">KARMALAND</h1>
+          <form action="index.php" class="formulario" method="POST">
+            <h1 class="animate__animated animate__backInLeft" >KARMALAND</h1>
             <span>Usuario</span>
-            <input type="text" class="form-control" name="usuario" placeholder="Ingrese nombre de usuario">
+            <input type="text" id="user"class="form-control" name="usuario" placeholder="Ingrese nombre de usuario">
             <span>Contraseña</span>
-            <input type="password" class="form-control" name="contraseña" placeholder="Ingrese contraseña de usuario">
-            <input type="submit"class="btn btn-primary" value="Ingresar">
-        </form> 
+            <input type="password" id="password"class="form-control" name="contraseña" placeholder="Ingrese contraseña de usuario">
+            <input type="submit" id="bn"class="btn btn-primary" value="Ingresar">
+          </form> 
         </div>
       </div>
     </div>

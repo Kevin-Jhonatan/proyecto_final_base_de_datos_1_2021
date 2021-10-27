@@ -45,3 +45,21 @@ body{
 	background-size: cover;
 	color:white;
 }
+@media screen and (max-width: 1000px) {
+    body {
+		width: auto;
+		font-size:100%;
+    }
+    .formulario {
+		background-position: center;
+		margin: 0;
+		width: auto;
+		align-content: center;
+    }
+	#user, #password {
+		width: 50%;
+	}
+	#bn {
+		width: 40%;
+	}
+}
